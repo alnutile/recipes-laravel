@@ -102,6 +102,7 @@ Route::group(['middleware' => ['web']], function () {
 
 
     Route::post('api/v1/favorite', 'FavoriteCreate@create')->name('favorite.create');
+
     Route::delete('api/v1/favorite/{comic_id}', 'FavoriteRemove@remove')->name('favorite.remove');
 
     Route::get('profile/edit', 'ProfileEditController@getAuthenticatedUsersProfileToEdit')->name('profile.edit');

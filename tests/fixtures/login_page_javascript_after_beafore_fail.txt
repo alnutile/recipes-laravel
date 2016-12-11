@@ -1,0 +1,233 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-popover-popup].popover.top-left &gt; .arrow,[uib-popover-popup].popover.top-right &gt; .arrow,[uib-popover-popup].popover.bottom-left &gt; .arrow,[uib-popover-popup].popover.bottom-right &gt; .arrow,[uib-popover-popup].popover.left-top &gt; .arrow,[uib-popover-popup].popover.left-bottom &gt; .arrow,[uib-popover-popup].popover.right-top &gt; .arrow,[uib-popover-popup].popover.right-bottom &gt; .arrow,[uib-popover-html-popup].popover.top-left &gt; .arrow,[uib-popover-html-popup].popover.top-right &gt; .arrow,[uib-popover-html-popup].popover.bottom-left &gt; .arrow,[uib-popover-html-popup].popover.bottom-right &gt; .arrow,[uib-popover-html-popup].popover.left-top &gt; .arrow,[uib-popover-html-popup].popover.left-bottom &gt; .arrow,[uib-popover-html-popup].popover.right-top &gt; .arrow,[uib-popover-html-popup].popover.right-bottom &gt; .arrow,[uib-popover-template-popup].popover.top-left &gt; .arrow,[uib-popover-template-popup].popover.top-right &gt; .arrow,[uib-popover-template-popup].popover.bottom-left &gt; .arrow,[uib-popover-template-popup].popover.bottom-right &gt; .arrow,[uib-popover-template-popup].popover.left-top &gt; .arrow,[uib-popover-template-popup].popover.left-bottom &gt; .arrow,[uib-popover-template-popup].popover.right-top &gt; .arrow,[uib-popover-template-popup].popover.right-bottom &gt; .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>ICDB: Internet Comic Database</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+   <link rel="stylesheet" href="/build/css/all-7343372362.css" />
+
+    <meta name="theme-color" content="#ffffff" />
+
+</head>
+
+<body class="ng-scope" ng-app="app">
+
+<div id="wrapper">
+
+    <header class="navbar" role="banner">
+
+        <div class="container">
+
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    <h1>ICDB</h1>
+                </a>
+
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div> <!-- /.navbar-header -->
+
+
+            <nav class="collapse navbar-collapse" role="navigation">
+
+    <ul class="nav navbar-nav navbar-right mainnav-menu">
+
+        <li class="dropdown ">
+            <a href="/about">
+                About
+            </a>
+        </li>
+        <li class="dropdown ">
+            <a href="/blogs">
+                News
+            </a>
+        </li>
+        
+
+        <li class="dropdown ">
+            <a href="/subscribe">
+                Support the Site!
+            </a>
+        </li>
+
+                    <li class="dropdown ">
+                <a href="/login">
+                    Login
+                </a>
+            </li>
+        
+
+    </ul>
+
+</nav>
+        </div> <!-- /.container -->
+
+    </header>
+
+    
+    <div class="row">
+        <div class="container">
+            <div class="alert alert-danger">
+        <p>There where some errors on the page</p>
+        <ul>
+                            <li>These credentials do not match our records.</li>
+                    </ul>
+    </div>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="container">
+                                
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+            <div class="panel panel-default">
+                <div class="panel-heading">Login</div>
+                <div class="panel-body">
+                    <form class="form-horizontal ng-pristine ng-valid" role="form" method="POST" action="https://recipes.dev/login">
+                        <input type="hidden" name="_token" value="tj51VpPX4xbwiphdMEKVWu8JsklZmogVn6lPx2Cp" />
+
+                        <div class="form-group has-error">
+                            <label class="col-md-4 control-label">E-Mail Address</label>
+
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="email" value="me@alfrednutile.info" />
+
+                                                                    <span class="help-block">
+                                        <strong>These credentials do not match our records.</strong>
+                                    </span>
+                                                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Password</label>
+
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" name="password" />
+
+                                                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember" /> Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-btn fa-sign-in"></i>Login
+                                </button>
+                                <a class="btn btn-success" href="/facebook/redirect">
+                                    <i class="fa fa-facebook"></i> Facebook Login</a>
+                                <a class="btn btn-link" href="https://recipes.dev/password/reset">
+                                    Forgot Your Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+    </div>
+
+</div> <!-- /#wrapper -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-3">
+
+                <div class="heading-block">
+                    <h4>ICDB</h4>
+                </div> <!-- /.heading-block -->
+
+                <p>Comics made searchable!</p>
+            </div> <!-- /.col -->
+
+
+            <div class="col-sm-3">
+
+                <div class="heading-block">
+                    <h4>Keep In Touch</h4>
+                </div> <!-- /.heading-block -->
+
+                <ul class="icons-list">
+                    <li>
+                        <i class="icon-li fa fa-envelope"></i>
+                        <a href="mailto:info@icdb.com">info@icdb.com</a>
+                    </li>
+                </ul>
+            </div> <!-- /.col -->
+
+
+            <div class="col-sm-3">
+
+                <div class="heading-block">
+                    <h4>Connect With Us</h4>
+                </div> <!-- /.heading-block -->
+
+                <ul class="icons-list">
+
+                    <li>
+                        <i class="icon-li fa fa-twitter"></i>
+                        <a href="https://twitter.com/icdb">Twitter</a>
+                    </li>
+
+                </ul>
+
+            </div> <!-- /.col -->
+
+
+            <div class="col-sm-3">
+
+                <div class="heading-block">
+                    <h4>Stay Updated</h4>
+                </div> <!-- /.heading-block -->
+
+                <p>Get emails about new theme launches &amp;  future updates.</p>
+
+            </div> <!-- /.col -->
+
+        </div> <!-- /.row -->
+
+    </div> <!-- /.container -->
+
+</footer>
+
+<footer class="copyright">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Copyright © 2015 <a href="https://alfrednutile.info">  Alfred Nutile, Inc</a></p>
+            </div> <!-- /.col -->
+        </div> <!-- /.row -->
+
+    </div>
+</footer>
+<!-- more coming soon as we aggregate assets -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Core JS -->
+<script src="https://recipes.dev/js/all.js"></script>
+
+
+<a id="back-to-top" href="#top" style="display: none;"><i class="fa fa-chevron-up"></i></a></body></html>
